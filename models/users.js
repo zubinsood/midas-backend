@@ -7,7 +7,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         unique: true,
         lowercase: true
-    }
+    },
+    stocks: [{
+        ref: 'UserStock',
+        type: mongoose.Schema.Types.ObjectId,
+    }]
 });
 
 export default mongoose.model('User', userSchema);
