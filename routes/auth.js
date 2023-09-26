@@ -3,7 +3,6 @@ import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
 import User from '../models/users.js'
-
 import verifyAuth from "../middlewares/veryAuth.js";
 
 const SECRET_KEY = process.env.SECRET_KEY
